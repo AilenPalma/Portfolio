@@ -1,0 +1,26 @@
+<p>contacto works!</p>
+<h2>Contactame</h2>
+<section>
+  <fieldset>
+    <form action="">
+      <div>
+        <label for="nombre">Nombre</label>
+          <input type="text" [(ngModel)]="contacto.nombre" id="nombre">
+
+      </div>
+
+      <div>
+        <label for="email">E-mail: </label>
+          <input type="email" [(ngModel)]="contacto.email" id="email">
+          <!-- (input)="onInputChange($event)"--> <!--{{ userInput }}-->
+
+      </div>
+
+      <div>
+        <label for="mensaje">Mensaje: </label>
+          <input type="text" [(ngModel)]="contacto.mensaje" id="mensaje" class="caja">
+      </div>
+    </form>
+  </fieldset>
+</section>
+<button type="submit" (click)="enviar()">Enviar</button>

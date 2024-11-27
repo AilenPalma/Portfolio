@@ -1,0 +1,16 @@
+<p>nav works!</p>
+<h5>Home</h5>
+<aside class="aside__nav"
+  [ngClass]="{ 'aside__nav--activo' : active }">
+  <ul class="asideUl">
+
+    <li class="asideLi"><a [routerLink]="['/routePath']"  class="asideA"></a>Me presento</li> <!--No se porque lo quiero en el home, pero quiero que aparezca con evento click y vuelva a estado natural-->
+    <li class="asideLi"><a [routerLink]="['meta/idMeta']"  class="asideA">Mi meta</a></li>
+    <li class="asideLi"><a [routerLink]="['motivacion/idMotivacion']" class="asideA">Lo que me motiva</a></li>
+    <li class="asideLi"><a [routerLink]="['aptitudes/idAptitudes']"  class="asideA">Experiencia</a></li>
+    <li class="asideLi"><a [routerLink]="['mas-de-mi/idMasdemi']"  class="asideA"></a>Más de mi</li>
+    <li class="asideLi"><a [routerLink]="['proyectos/idProyectos']"  class="asideA">Logros</a></li>
+    <li class="asideLi"><a [routerLink]="['contacto/idContacto']" class="asideA">Contacto</a></li>
+
+  </ul>
+</aside>
