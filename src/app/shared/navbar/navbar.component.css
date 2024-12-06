@@ -1,0 +1,82 @@
+.navbar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1000;
+  transform: translateX(-100%); /* Oculta la barra lateral por defecto */
+  transition: transform 0.3s ease-in-out; /* Animación suave */
+}
+
+.navbar:not(.hidden) {
+  transform: translateX(0); /* Muestra la barra lateral */
+}
+
+.hidden {
+  transform: translateX(-100%); /* Oculta la barra lateral */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 20px;
+  margin: 20px;
+}
+
+.navbar li {
+  margin: 15px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+* Muestra la barra lateral */
+.navbar:not(.hidden) {
+  transform: translateX(0); /* Muestra la barra lateral */
+}
+
+.hidden {
+  transform: translateX(-100%); /* Oculta la barra lateral */
+}
+
+/*.navbar ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 15px 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+.navbar a:hover {
+  text-decoration: underline;
+}*/
+
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1100;
+  font-size: 18px;
+}

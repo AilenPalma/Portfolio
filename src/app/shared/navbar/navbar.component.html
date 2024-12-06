@@ -1,0 +1,19 @@
+
+<button class="menu-toggle" (click)="toggleNavbar()">☰ Menú</button>
+<nav class="navbar" [class.hidden]="isNavbarHidden" id="sidebar" >
+
+  <ul>
+
+      <li class="asideLi"><a [routerLink]="['/routePath']"  class="asideA"></a>Me presento</li>
+      <li class="asideLi"><a [routerLink]="['about/idAbout']"  class="asideA">About</a></li>
+      <li class="asideLi"><a [routerLink]="['skills/idSkills']" class="asideA">Skills</a></li>
+      <li class="asideLi"><a [routerLink]="['objectives/idObjectives']"  class="asideA">Objectives</a></li>
+      <li class="asideLi"><a [routerLink]="['projects/idProjects']" class="asideA">Projects</a></li>
+      <li class="asideLi"><a [routerLink]="['motivation/idMotivation']"  class="asideA">Motivation</a></li>
+      <li class="asideLi"><a [routerLink]="['contact/idContact']" class="asideA">Contact</a></li>
+  </ul>
+
+</nav>
+
+
+
